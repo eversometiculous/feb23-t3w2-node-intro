@@ -15,6 +15,11 @@ let userEnteredNumber = false;
 do {
     userInput = promptInstance("What is the coolest number in the universe? ");
 
+    if (!parseInt(userInput) && !parseFloat(userInput)) {
+        //throw "User did not enter a number!";
+        throw new Error("User did not enter a number!!");       //another style
+    }
+
     let userInputAsNumber = Number(userInput);
 
     if (userInputAsNumber === 42){
