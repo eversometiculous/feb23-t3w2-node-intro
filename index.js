@@ -4,6 +4,9 @@ const promptInstance = promptSync({
     sigint: true        // allows CTRL+C to exit the app
 });
 
+// some comment here
+// comment for naomi
+
 // or const promptInstance = require('prompt-sync')({sigint:true});
 
 let userInput = null;
